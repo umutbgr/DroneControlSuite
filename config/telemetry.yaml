@@ -1,0 +1,4 @@
+telemetry:
+  update_rate_hz: 10
+  timeout_ms: 1000
+  log_enabled: true

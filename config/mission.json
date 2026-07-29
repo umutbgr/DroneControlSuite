@@ -1,0 +1,9 @@
+{
+    "mission_name": "default_mission",
+    "home": {
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "altitude_m": 0.0
+    },
+    "waypoints": []
+}

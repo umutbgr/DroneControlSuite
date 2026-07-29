@@ -1,0 +1,4 @@
+drone:
+  system_id: 1
+  component_id: 1
+  connection: udp://127.0.0.1:14550
