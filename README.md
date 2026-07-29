@@ -1,4 +1,4 @@
-# 🚁 DroneControl Suite
+# DroneControl Suite
 
 A modular C++ mission planning and drone control framework designed for autonomous UAV operations.
 
@@ -12,7 +12,7 @@ A modular C++ mission planning and drone control framework designed for autonomo
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active%20Development-orange)
 
-## 🎥 Demo
+## Demo
 
 Demo media will be added as the project evolves.
 
