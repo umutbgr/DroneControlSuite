@@ -20,7 +20,7 @@ Demo media will be added as the project evolves.
 - Demo video: `assets/videos/demo.mp4`
 - Screenshots: `assets/images/`
 
-## 📖 About
+## About
 
 DroneControl Suite is a modular UAV mission planning and control framework written in Modern C++.
 
@@ -28,7 +28,7 @@ This project serves as a long-term engineering platform for experimenting with m
 
 The project is designed to gradually integrate mission planning, telemetry processing, camera systems, MAVLink communication, and future ROS2/PX4 support.
 
-## 📌 Current Status
+## Current Status
 
 The project is currently under active development.
 
@@ -59,7 +59,7 @@ The project is currently under active development.
 - AI Vision module
 - Multi-UAV support
 
-## ✨ Features
+## Features
 
 > Note: This section describes the intended project capabilities. Current implementation status is listed in the **Current Status** section.
 
@@ -86,7 +86,7 @@ The project is currently under active development.
 - PX4 (planned)
 - Gazebo (planned)
 
-## 🏗️ Architecture
+## Architecture
 
 DroneControl Suite is organized as a layered UAV software framework. Each module has a clear responsibility and can evolve independently as the project grows.
 
@@ -162,7 +162,7 @@ cmake -S . -B build
 cmake --build build
 ```
 
-## ▶️ Usage
+## Usage
 
 Linux/macOS:
 
@@ -176,7 +176,7 @@ Windows:
 .\build\MissionControl.exe
 ```
 
-## 📦 Modules
+## Modules
 
 ### Core
 Provides shared application primitives, lifecycle management, and common interfaces used across the framework.
@@ -202,7 +202,7 @@ Loads mission, camera, drone, and telemetry settings from external configuration
 ### UI
 Contains user-facing interfaces and future visualization components.
 
-## ⚙️ Engineering Decisions
+## Engineering Decisions
 
 ### Why Modern C++?
 Modern C++ provides performance, type safety, deterministic resource management, and strong control over system-level behavior, making it suitable for UAV mission software.
@@ -225,7 +225,7 @@ Python is excellent for prototyping, scripting, and rapid experimentation. This 
 ### Future Migration to ROS2
 The current architecture is designed so that mission, telemetry, and communication modules can later be adapted into ROS2 nodes.
 
-## 🧩 Planned Design Patterns
+## Planned Design Patterns
 
 The following design patterns may be introduced where they provide clear architectural value:
 
@@ -234,7 +234,7 @@ The following design patterns may be introduced where they provide clear archite
 - **Strategy** for interchangeable mission execution behaviors.
 - **Singleton** only for carefully controlled global services, if necessary.
 
-## 🧼 Coding Standards
+## Coding Standards
 
 - C++20 standard
 - `.clang-format` based formatting
@@ -245,7 +245,7 @@ The following design patterns may be introduced where they provide clear archite
 - Avoid hardcoded runtime values; use files under `config/`
 - Follow modern C++ practices inspired by the Google C++ Style Guide where appropriate
 
-## 🔁 Development Workflow
+## Development Workflow
 
 ```text
 Feature Branch
@@ -259,7 +259,7 @@ Code Review
 Merge
 ```
 
-## 🏷️ Versioning
+## Versioning
 
 This project follows Semantic Versioning.
 
@@ -269,7 +269,7 @@ v0.2.x  Core mission, telemetry, and communication features
 v1.0.0  Stable mission control framework
 ```
 
-## 📚 Documentation
+## Documentation
 
 - [Architecture](docs/architecture.md)
 - [Getting Started](docs/getting_started.md)
@@ -277,7 +277,7 @@ v1.0.0  Stable mission control framework
 - [Roadmap](docs/roadmap.md)
 - [API Documentation](docs/api/README.md)
 
-## 🚀 Roadmap
+## Roadmap
 
 - ✅ Project structure
 - ✅ Modular architecture
@@ -294,13 +294,13 @@ v1.0.0  Stable mission control framework
 - ⬜ AI Vision module
 - ⬜ Multi-UAV support
 
-## 🎯 Motivation
+## Motivation
 
 This project serves as a long-term engineering platform for experimenting with modular UAV mission software, scalable software architecture, and autonomous system design using Modern C++.
 
 The goal is not only to build a working application, but also to demonstrate clean project organization, maintainable architecture, documentation discipline, testing structure, and engineering decision-making.
 
-## 📚 What I Learned
+## What I Learned
 
 - Modern C++ project organization
 - CMake-based build configuration
@@ -310,7 +310,14 @@ The goal is not only to build a working application, but also to demonstrate cle
 - Documentation-first engineering habits
 - Scalable repository structure
 
-## 🔮 Future Work
+## Engineering Goals
+
+- Build a scalable mission software architecture
+- Apply Modern C++ best practices
+- Design maintainable modular components
+- Prepare the project for ROS2 and PX4 integration
+
+## Future Work
 
 - ROS2 integration
 - PX4 support
@@ -321,7 +328,7 @@ The goal is not only to build a working application, but also to demonstrate cle
 - AI mission planning
 - Cloud telemetry
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 - MAVLink
 - PX4
@@ -336,7 +343,7 @@ This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for det
 ## 📬 Contact
 
 - GitHub: [umutbgr](https://github.com/umutbgr)
-- LinkedIn: Add your LinkedIn profile here
-- Email: Add your email address here
+- LinkedIn: https://linkedin.com/in/umut-buğra-şahin-9a0764298
+- Email: umutbugrasahin366@gmail.com
 
 If you have suggestions or feedback, feel free to open an issue or contact me.
