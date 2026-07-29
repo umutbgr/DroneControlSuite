@@ -38,6 +38,7 @@ The project is currently under active development.
 - Modular `include/` and `src/` folder layout
 - CMake build system
 - Configuration file structure
+- Mission Planner simulation configuration
 - GitHub Actions CI workflow
 - Documentation structure
 - Placeholder modules for future implementation
@@ -275,6 +276,7 @@ v1.0.0  Stable mission control framework
 - [Getting Started](docs/getting_started.md)
 - [Modules](docs/modules.md)
 - [Roadmap](docs/roadmap.md)
+- [Mission Planner Simulation](docs/mission_planner_simulation.md)
 - [API Documentation](docs/api/README.md)
 
 ## Roadmap
@@ -283,6 +285,7 @@ v1.0.0  Stable mission control framework
 - ✅ Modular architecture
 - ✅ CMake build system
 - ✅ GitHub Actions CI
+- ✅ Mission Planner simulation workflow documentation
 - ⬜ Logging module implementation
 - ⬜ Mission Manager
 - ⬜ Telemetry Manager

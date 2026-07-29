@@ -1,0 +1,28 @@
+simulation:
+  vehicle: ArduCopter
+  mode: SITL
+  ground_control_station: Mission Planner
+
+mavlink:
+  mission_planner:
+    protocol: udp
+    host: 127.0.0.1
+    port: 14550
+  drone_control_suite:
+    protocol: udp
+    host: 127.0.0.1
+    port: 14551
+
+startup:
+  sitl_command: >
+    sim_vehicle.py -v ArduCopter --console --map
+    --out=udp:127.0.0.1:14550
+    --out=udp:127.0.0.1:14551
+
+validation:
+  expected_messages:
+    - HEARTBEAT
+    - ATTITUDE
+    - GLOBAL_POSITION_INT
+    - SYS_STATUS
+    - GPS_RAW_INT
