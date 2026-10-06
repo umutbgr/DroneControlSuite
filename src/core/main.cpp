@@ -15,7 +15,7 @@ namespace {
 }
 
 int main() {
-    constexpr std::uint16_t telemetryPort = 14551; // SITL second output port
+    constexpr std::uint16_t telemetryPort = 14600; // local_mavlink_sim.py output port
 
     std::signal(SIGINT,  onSignal);
     std::signal(SIGTERM, onSignal);
