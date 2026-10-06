@@ -236,21 +236,21 @@ static void testAttitude() {
 static void testVfrHud() {
     std::cout << "\n[Test] VFR_HUD message parsing\n";
 
-    // Field layout:
+    // Field layout (MAVLink common.xml wire order):
     //   0  airspeed    float (m/s)
     //   4  groundspeed float (m/s)
-    //   8  heading     int16 (deg, 0-359)
-    //  10  throttle    uint16
-    //  12  alt         float (m)
-    //  16  climb       float (m/s)
+    //   8  alt         float (m)
+    //  12  climb       float (m/s)
+    //  16  heading     int16 (deg, 0-359)
+    //  18  throttle    uint16
     std::vector<std::uint8_t> hudPayload(20, 0);
     const float   wantGS      = 5.5f;
     const std::int16_t wantHdg = 180;
     const float   wantClimb   = 1.2f;
 
     writeLE(hudPayload,  4, wantGS);
-    writeLE(hudPayload,  8, wantHdg);
-    writeLE(hudPayload, 16, wantClimb);
+    writeLE(hudPayload, 12, wantClimb);
+    writeLE(hudPayload, 16, wantHdg);
 
     std::vector<std::uint8_t> posPayload(28, 0);
     writeLE(posPayload, 16, static_cast<std::int32_t>(5 * 1000));

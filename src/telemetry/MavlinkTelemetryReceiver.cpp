@@ -213,8 +213,8 @@ void MavlinkTelemetryReceiver::processPacket(std::uint8_t messageId, const std::
 
     case MsgVfrHud:
         state_.groundSpeed = readLittleEndian<float>(payload, 4);
-        state_.headingDeg = readLittleEndian<std::int16_t>(payload, 8);
-        state_.climbRate = readLittleEndian<float>(payload, 16);
+        state_.climbRate   = readLittleEndian<float>(payload, 12);
+        state_.headingDeg  = readLittleEndian<std::int16_t>(payload, 16);
         state_.hudReceived = true;
         shouldPrint = true;
         break;
