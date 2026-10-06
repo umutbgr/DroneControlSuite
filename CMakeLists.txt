@@ -10,6 +10,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+find_package(Threads REQUIRED)
+
 add_executable(MissionControl
     src/core/main.cpp
     src/telemetry/MavlinkTelemetryReceiver.cpp
@@ -20,6 +22,7 @@ target_include_directories(MissionControl
         ${PROJECT_SOURCE_DIR}/include
 )
 
+target_link_libraries(MissionControl PRIVATE Threads::Threads)
 if(WIN32)
     target_link_libraries(MissionControl PRIVATE ws2_32)
 endif()
@@ -39,6 +42,7 @@ target_include_directories(SITLTelemetryTest
         ${PROJECT_SOURCE_DIR}/include
 )
 
+target_link_libraries(SITLTelemetryTest PRIVATE Threads::Threads)
 if(WIN32)
     target_link_libraries(SITLTelemetryTest PRIVATE ws2_32)
 endif()

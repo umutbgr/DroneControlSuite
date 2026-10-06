@@ -52,9 +52,13 @@ jobs:
       - name: Build
         run: cmake --build build --config Release
 
+      - name: Check test binary (Ubuntu)
+        if: matrix.os == 'ubuntu-latest'
+        run: ls -lh build/SITLTelemetryTest && file build/SITLTelemetryTest
+
       - name: Run integration tests (Ubuntu)
         if: matrix.os == 'ubuntu-latest'
-        run: ctest --test-dir build --output-on-failure --timeout 60
+        run: ctest --test-dir build --output-on-failure --timeout 60 -V
 
       - name: Run integration tests (Windows)
         if: matrix.os == 'windows-latest'
